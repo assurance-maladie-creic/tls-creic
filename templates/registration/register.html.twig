@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}registration.register.title{% endtrans %}{% endblock %}
+
+{% block body %}
+    {% for flash_error in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+    {% endfor %}
+
+    <h1 class="text-center display-5 text--primary fw-bold am-font-narrow">
+        {% trans %}home.index.heading{% endtrans %}
+    </h1>
+    {% include 'home/_flags.html.twig' %}
+
+    {% for i in 0..1 %}
+        {# Ajout d'un espace vertical sur les grands écrans #}
+        <div class="mt-md-5 mt-lg-5" style="min-height: 100%"></div>
+    {% endfor %}
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6 mx-auto">
+
+            <div class="card text-bg-light">
+                <div class="card-body mx-5">
+                    <h1 class="h3 mt-3 mb-5 font-weight-normal text-center text--primary-color">
+                        {% trans %}registration.register.title{% endtrans %}
+                    </h1>
+
+                    {{ form_start(registration_form) }}
+                        <div
+                            {{ stimulus_controller('zone-identifiants-validator') }}
+                            data-zone-identifiants-validator-rule-outlet=".password-rule"
+                            data-zone-identifiants-validator-disableable-button-outlet=".password-form-button"
+                            data-zone-identifiants-validator-show-captcha-outlet="[data-controller=show-captcha]"
+                        >
+                            {{ form_row(registration_form.email, {
+                                attr: {
+                                    'data-zone-identifiants-validator-target': 'emailField',
+                                    'data-action': 'input->zone-identifiants-validator#triggerUpdate'
+                                }
+                            }) }}
+
+                            <div>
+                                {{ form_row(registration_form.plainPassword, {
+                                    attr: {
+                                        'data-zone-identifiants-validator-target': 'passwordField',
+                                        'data-action': 'input->zone-identifiants-validator#triggerUpdate',
+                                    }
+                                }) }}
+                            </div>
+
+                            <!--
+                            ...
+                            -->
+                                                        
+                    {{ form_end(registration_form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

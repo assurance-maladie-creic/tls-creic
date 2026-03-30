@@ -1,0 +1,20 @@
+MSG_ERR_FO_002: 'Veuillez compléter ce champ.'
+MSG_ERR_FO_003: '...'
+MSG_ERR_FO_004: "..."
+MSG_ERR_FO_005: 'La date de naissance doit être antérieure à la date du jour.'
+MSG_ERR_FO_006: 'Votre date d’entrée en France doit être antérieure à la date du jour.'
+MSG_ERR_FO_007: 'Votre date d’entrée en France doit être postérieure à votre date de naissance.'
+MSG_ERR_FO_008: 'Email rattaché à un dossier existant.'
+MSG_ERR_FO_009: 'Ville inconnue pour ce code postal.'
+MSG_ERR_FO_010: '...'
+MSG_ERR_FO_013: '...'
+MSG_ERR_FO_018: '...'
+MSG_ERR_FO_020: '...'
+MSG_ERR_FO_021: '...'
+MSG_ERR_FO_022: '...'
+MSG_ERR_FO_025: "..."
+MSG_ERR_FO_026: '...'
+MSG_ERR_FO_029: '...'
+
+MontantTotalRessources:
+    message: 'Montant insuffisant.'

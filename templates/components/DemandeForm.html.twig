@@ -1,0 +1,85 @@
+<div {{ attributes }}>
+    {{ form_start(form, {
+        attr: {
+            id: 'demande-edit',
+            novalidate: true,
+        },
+    }) }}
+        <div id="mon-identite">
+            {{ form_label(form.monIdentite) }}
+            {{ form_label(form.monIdentite.mesInformationsPersonnelles) }}
+                {{ form_row(form.monIdentite.mesInformationsPersonnelles.civilite) }}
+                {{ form_row(form.monIdentite.mesInformationsPersonnelles.nom) }}
+                {{ form_row(form.monIdentite.mesInformationsPersonnelles.nomDeNaissance) }}
+                {{ form_row(form.monIdentite.mesInformationsPersonnelles.prenom) }}
+                {{ form_row(form.monIdentite.mesInformationsPersonnelles.dateNaissance) }}
+
+                <!--
+                ...
+                -->
+
+        </div>
+
+        <div id="ma-residence">
+            <!--
+            ...
+            -->
+        </div>
+
+        <div
+            {{ stimulus_controller('ressources-foyer-concealer', {
+                minimaSociauxTroisMois: computed.minimaSociauxTroisMois,
+                minimaSociauxDouzeMois: computed.minimaSociauxDouzeMois,
+            }) }}
+        >
+            <div id="mon-foyer">
+
+                <!--
+                ...
+                -->
+
+                {{ form_label(form.monFoyer.ressourcesDeMonFoyer) }}
+                {{ form_row(form.monFoyer.ressourcesDeMonFoyer.totalRessourcesFoyer3mois) }}
+                <twig:ListeRessourcesFoyer />
+                <div {{ stimulus_target('ressources-foyer-concealer', 'partieDouzeMois') }}>
+                    {{ form_row(form.monFoyer.ressourcesDeMonFoyer.totalRessourcesFoyer12mois) }}
+                    <twig:ListeRessourcesFoyer />
+                </div>
+
+                <div class="text-center">
+                    <button
+                        type="button"
+                        class="btn btn--primary-light btn--am py-2"
+                        {{ stimulus_target('ressources-foyer-concealer', 'boutonValider') }}
+                        {{ stimulus_action('ressources-foyer-concealer', 'rafraichirEtat', 'click') }}
+                    >
+                        {% trans %}registration.register.valider_mes_informations{% endtrans %}
+                    </button>
+                </div>
+
+                <div {{ stimulus_target('ressources-foyer-concealer', 'partieRessourcesInsuffisantes') }}>
+                    <div class="alert alert-danger mt-3" role="alert">
+                        {% trans %}inscription.pre_inscription.ressources_insuffisantes{% endtrans %}
+                    </div>
+
+                    <div class="text-center">
+                        <a href="{{ path('inscription.recap_ame') }}" class="btn btn--primary-light btn--am-py-10">
+                            {% trans %}inscription.pre_inscription.imprimer_recap_ame{% endtrans %}
+                        </a>
+                    </div>
+                </div>
+
+                <!--
+                ...
+                -->
+            </div>
+
+            <!--
+            ...
+            -->
+
+        </div>
+
+    {{ form_end(form) }}
+
+</div>

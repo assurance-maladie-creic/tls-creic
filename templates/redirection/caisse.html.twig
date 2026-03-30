@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}redirection.caisse.title{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1 class="text-center display-5 text--primary fw-bold am-font-narrow">
+        {% trans %}home.index.heading{% endtrans %}
+    </h1>
+    {% include 'home/_flags.html.twig'%}
+
+    {% for i in 0..2 %}
+        {# Ajout d'un espace vertical sur les grands écrans #}
+        <div class="mt-md-5 mt-lg-5" style="min-height: 100%"></div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-md-6 col-lg-6 mx-auto">
+            <div class="card text-bg-light sans-serif border--primary p-md-5 p-lg-5">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {% trans %}redirection.caisse.heading{% endtrans %}
+                    </h5>
+
+                    <div class="mx-5 text-center mt-md-4 mt-sm-1">
+                        <p>
+                            {% trans %}redirection.caisse.instruction{% endtrans %}
+                        </p>
+                        <div class="mt-md-4 mt-sm-1">
+                            <!--
+                            ...
+                            -->
+                        </div>
+                        <div class="pt-5">
+                            <a href="{{ path('situation') }}" role="button" class="btn btn-outline-secondary btn-lg btn--am-small me-sm-2 me-md-2 me-lg-2">
+                                {% trans %}redirection.caisse.retour{% endtrans %}
+                            </a>
+                            <a href="{{ path('homepage') }}" role="button" class="btn btn-outline--primary btn-lg btn--am-small ms-sm-2 ms-md-2 ms-lg-2">
+                                {% trans %}redirection.caisse.a_bientot{% endtrans %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,224 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}liste_pieces.index.title{% endtrans %}{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+        <div class="card text-bg-light col-sm-10 col-md-8 col-lg-8">
+            <div class="card-body">
+                <h5 class="card-title text-center display-5 text--primary am-font-narrow">
+                    {% trans %}liste_pieces.index.heading{% endtrans %}
+                </h5>
+                {# Ajout d'un espace vertical sur les grands écrans #}
+                <div class="mt-md-5 mt-lg-5"></div>
+
+                <div class="mx-md-1 mx-md-5 mx-lg-5 sans-serif">
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 p-4">
+                            <p class="lead text--primary-color fw-bold">
+                                {% trans %}liste_pieces.index.documents_necessaires{% endtrans %}
+                            </p>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <p class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#justificatif-identite">
+                                            {% trans %}liste_pieces.index.justificatif_identite.title{% endtrans %}
+                                        </button>
+                                    </p>
+                                    <div id="justificatif-identite" class="accordion-collapse collapse">
+                                        <div class="accordion-body ">
+                                            <div class="alert alert-info d-flex align-items-center accordion-detail" role="alert">
+                                                <i class="bi bi-info-circle fs-3 mx-3" aria-hidden="true"></i>
+                                                {% trans %}liste_pieces.index.justificatif_identite.detail{% endtrans %}
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header">
+                                        <button class="accordion-button collapsed accordion-sans-icone">
+                                            {% trans %}liste_pieces.index.extrait_acte_naissance{% endtrans %}
+                                        </button>
+                                    </p>
+
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#justificatif-residence">
+                                            {% trans %}liste_pieces.index.justificatif_residence.title{% endtrans %}
+                                        </button>
+                                    </p>
+                                    <div id="justificatif-residence" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="alert alert-info d-flex align-items-center accordion-detail" role="alert">
+                                                <i class="bi bi-info-circle fs-3 mx-3" aria-hidden="true"></i>
+                                                <ul>
+                                                    <li>{% trans %}liste_pieces.index.justificatif_residence.detail1{% endtrans %}</li>
+                                                    <li>{% trans %}liste_pieces.index.justificatif_residence.detail2{% endtrans %}</li>
+                                                    <li>{% trans %}liste_pieces.index.justificatif_residence.detail3{% endtrans %}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#justificatifs-ressources">
+                                            {% trans %}liste_pieces.index.justificatif_ressources.title{% endtrans %}
+                                        </button>
+                                    </p>
+                                    <div id="justificatifs-ressources" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="alert alert-info d-flex align-items-center accordion-detail" role="alert">
+                                                <i class="bi bi-info-circle fs-3 mx-3" aria-hidden="true"></i>
+                                                <ul>
+                                                    <li>{% trans %}liste_pieces.index.justificatif_ressources.detail1{% endtrans %}</li>
+                                                    <li>{% trans %}liste_pieces.index.justificatif_ressources.detail2{% endtrans %}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item border-0 mt-sm-1 mt-md-3 mt-lg-3">
+                            <p class="lead text--primary-color fw-bold">
+                                {% trans %}liste_pieces.index.documents_supplementaires{% endtrans %}
+                            </p>
+                            <ul class="list-group">
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.vous_etes_marie{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.acte_mariage{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li><li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.vos_enfants_scolarises{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.certificats_scolarites{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.vous_etes_etudiant{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.carte_etudiant{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.vous_etes_demandeur_emploi{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.attestation_pole_emploi{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.vous_etes_pensionne{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.attestation_pension{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.allocation_chomage_pays_precedent{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.document_portable_u2{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.regime_assurance_maladie_pays_precedent{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.formulaire_s1.title{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center accordion-detail text-secondary mb-2" role="alert">
+                                        {% trans %}liste_pieces.index.formulaire_s1.detail{% endtrans %}
+                                    </div>
+
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.assurance_privee{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed accordion-sans-icone" type="button">
+                                                    {% trans %}liste_pieces.index.contrat_assurance_privee{% endtrans %}
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="text--primary-light-color mb-1">{% trans %}liste_pieces.index.couverture_maladie_perdue{% endtrans %}</div>
+                                    <div class="accordion mb-2">
+                                        <div class="accordion-item">
+                                            <p class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#justificatif-perte-couv-maladie">
+                                                    {% trans %}liste_pieces.index.justificatif_perte_couverture_maladie.title{% endtrans %}
+                                                </button>
+                                            </p>
+                                            <div id="justificatif-perte-couv-maladie" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="alert alert-info d-flex align-items-center accordion-detail" role="alert">
+                                                        <i class="bi bi-info-circle fs-3 mx-3" aria-hidden="true"></i>
+                                                        {% trans %}liste_pieces.index.justificatif_perte_couverture_maladie.detail{% endtrans %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!--
+                    ...
+                    -->
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+    </div>
+{% endblock %}

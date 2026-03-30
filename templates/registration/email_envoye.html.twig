@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}registration.confirm.title{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1 class="text-center display-5 text--primary fw-bold am-font-narrow">
+        {% trans %}home.index.heading{% endtrans %}
+    </h1>
+    {% include 'home/_flags.html.twig'%}
+
+    {% for i in 0..2 %}
+        {# Ajout d'un espace vertical sur les grands écrans #}
+        <div class="mt-md-5 mt-lg-5" style="min-height: 100%"></div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-md-6 col-lg-6 mx-auto">
+            <div class="card text-bg-light sans-serif border--primary p-md-5 p-lg-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">
+                        {% trans %}registration.confirm.heading{% endtrans %}
+                    </h5>
+
+                            <div class="mx-5 text-center mt-md-4 mt-sm-1">
+                                <p>
+                                    {% trans with {'%email%': email|anonymize_email} %}registration.confirm.explication_email{% endtrans %}
+                                </p>
+                                <p>
+                                    <b>
+                                        {% trans %}registration.confirm.invitation_activation{% endtrans %}
+                                    </b>
+                                </p>
+                                <p>
+                                    {% trans %}registration.confirm.invitation_connexion{% endtrans %}
+                                </p>
+                            </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}inscription.pre_inscription.title{% endtrans %}{% endblock %}
+
+{% block body %}
+    <div class="row mb-2 sticky-top">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <nav
+                id="form-nav"
+                class="navbar navbar-light bg-white px-3 sticky-top justify-content-center"
+                {{ stimulus_controller('offset-jumper') }}
+                {{ stimulus_target('offset-jumper', 'navbar') }}
+            >
+                <ul class="nav nav-pills flex-column flex-md-row">
+                    <li class="nav-item">
+                        <a href="#mon-identite" class="nav--link pre-inscription" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            1 - {{ 'form.pre_inscription.mon_identite_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ma-residence" class="nav--link pre-inscription" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            2 - {{ 'form.pre_inscription.ma_residence_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mon-foyer" class="nav--link pre-inscription" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            3 - {{ 'form.pre_inscription.mon_foyer_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#je-cree-mon-espace" class="nav--link pre-inscription" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            4 - {{ 'form.pre_inscription.user_label'|trans }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="card text-bg-light col-md-6 p-3">
+            <div class="card-body">
+                <twig:DemandeForm
+                    :form="form"
+                    :url="url"
+                    :nationalite="nationalite"
+                    :situation="situation"
+                    identifiants
+                    data-bs-spy="scroll"
+                    data-bs-offset="20"
+                    data-bs-target="#form-nav"
+                    tabindex="0"
+                />
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+{% endblock %}

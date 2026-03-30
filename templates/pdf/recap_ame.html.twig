@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        {{ source('@styles/export_pdf.css') }}
+    </style>
+    <title>{% trans %}home.index.heading{% endtrans %}</title>
+</head>
+<body>
+    <header>
+        <img src="{{ source('@images/ASSURANCE_MALADIE_Logo_RVB.jpg')|data_uri }}" alt="Logo pour impression" style="width: 25%">
+    </header>
+
+    <main>
+        <h1 class="bleu-cpam">
+            {% trans %}home.index.heading{% endtrans %}
+        </h1>
+
+        <p>
+            {% trans %}pdf.recap_ame.ressources_insuffisantes{% endtrans %}
+        </p>
+
+        <p>
+            {% trans %}pdf.recap_ame.doit_faire_demande_ame{% endtrans %}
+        </p>
+
+        <p>
+            {% trans %}pdf.recap_ame.pour_cela{% endtrans %}
+        </p>
+
+        <ol>
+            <li>
+                {% trans %}pdf.recap_ame.rassembler_documents{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.remplir_formulaire{% endtrans %}
+                <p>
+                    {% trans %}pdf.recap_ame.formulaire_disponible{% endtrans %}
+                    <a href="{{ adresse_formulaire_ame }}">{{ adresse_formulaire_ame }}</a>
+                </p>
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.deposer_formulaire{% endtrans %}
+            </li>
+        </ol>
+
+        <hr>
+
+        <h2 class="bleu-cpam">
+            {% trans %}pdf.recap_ame.titre_documents_fournir{% endtrans %}
+        </h2>
+
+        <p>
+            {% trans %}pdf.recap_ame.pour_vous_et{% endtrans %}
+            <u>{% trans %}pdf.recap_ame.chaque_membre{% endtrans %}</u>
+            {% trans %}pdf.recap_ame.de_famille{% endtrans %}<u>{% trans %}pdf.recap_ame.un{% endtrans %}</u>{% trans %}pdf.recap_ame.des_documents_suivants{% endtrans %}
+        </p>
+
+        <ul>
+            <li>
+                {% trans %}pdf.recap_ame.passeport{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.carte_identite{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.titre_sejour{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.extrait_acte_naissance{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.autre_doc{% endtrans %}
+            </li>
+        </ul>
+
+        <p>
+            {% trans %}pdf.recap_ame.personne_vivant_avec_vous{% endtrans %}
+        </p>
+
+        <ul>
+            <li>
+                {% trans %}pdf.recap_ame.declaration_honneur{% endtrans %}
+            </li>
+        </ul>
+
+        <p>
+            {% trans %}pdf.recap_ame.pas_d_adresse_personnelle{% endtrans %}<u>{% trans %}pdf.recap_ame.un{% endtrans %}</u>{% trans %}pdf.recap_ame.des_documents_suivants{% endtrans %}
+        </p>
+
+        <ul>
+            <li>
+                {% trans %}pdf.recap_ame.attestation_domiciliation_ccas{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.attestation_honneur{% endtrans %}
+            </li>
+        </ul>
+
+        <p>
+            {% trans %}pdf.recap_ame.situation_irreguliere{% endtrans %}<u>{% trans %}pdf.recap_ame.un{% endtrans %}</u>{% trans %}pdf.recap_ame.des_documents_ci_dessous{% endtrans %}
+        </p>
+        <ul>
+            <li>
+                {% trans %}pdf.recap_ame.passeport_entree{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.contrat_location_quittance_loyer{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.facture{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.avis_impot{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.avis_taxe{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.quittance_facture_personne_herbegeante{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.attestation_hebergement_centre{% endtrans %}
+            </li>
+            <li>
+                {% trans %}pdf.recap_ame.attestation_domiciliation{% endtrans %}
+            </li>
+        </ul>
+
+        <p>
+            {% trans %}pdf.recap_ame.joindre_documents{% endtrans %}
+        </p>
+    </main>
+</body>
+</html>

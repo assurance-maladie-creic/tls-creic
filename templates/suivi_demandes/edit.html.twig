@@ -1,0 +1,175 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}suivi_demandes.edit.title{% endtrans %}{% endblock %}
+
+{% block body %}
+<!--
+...
+-->
+<div class="container">
+    <div class="row">
+        {% set can_edit_donnees = is_granted('DEMANDE_EDIT_DONNEES', demande) %}
+        <div class="col-md-12 col-lg-7 mx-auto">
+            <nav
+                id="form-nav"
+                class="navbar navbar-light bg-white px-3 justify-content-center sticky-top"
+                {{ stimulus_controller('offset-jumper') }}
+                {{ stimulus_target('offset-jumper', 'navbar') }}
+            >
+                <ul class="nav nav-pills nav-fill w-100 mb-3" role="tablist">
+                    <li class="nav-item " role="presentation">
+                        <button
+                            class="nav-link active bg--primary-light-color"
+                            type="button"
+                            role="button"
+                            aria-selected="true"
+                        >
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="border text-bg-light text--primary-light-color fw-bold rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">1</div>
+                                {% trans %}suivi_demandes.edit.mes_informations{% endtrans %}
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-2" role="presentation">
+                        <a
+                            class="nav-link border border--primary"
+                            role="button"
+                            aria-selected="false"
+                            {% if can_edit_donnees %}
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal-confirm"
+                                data-bs-confirm-url="{{ path('suivi_demandes.edit_documents', {demandeId: demande.id}) }}"
+                            {% else %}
+                                href="{{ path('suivi_demandes.edit_documents', {demandeId: demande.id}) }}"
+                            {% endif %}
+                        >
+                            <div class="d-flex align-items-center gap-3 text--primary-light-color">
+                                <div class="border text-bg-light text--primary-light-color fw-bold rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">2</div>
+                                {% trans %}suivi_demandes.edit.pieces_jointes{% endtrans %}
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex-column flex-md-row mb-2" >
+                    <li class="nav-item">
+                        <a href="#mon-identite" class="nav--link" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            {{ 'form.pre_inscription.mon_identite_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ma-residence" class="nav--link" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            {{ 'form.pre_inscription.ma_residence_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mon-foyer" class="nav--link" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            {{ 'form.pre_inscription.mon_foyer_label'|trans }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active">
+                    <div class="card text-bg-light">
+                        <div class="card-body">
+                            {% if can_edit_donnees %}
+                                <twig:BootstrapModal
+                                    title="{{ 'suivi_demandes.edit.modal_confirm.title'|trans }}"
+                                    fade
+                                    id="modal-confirm"
+                                    data-controller="unsaved-changes"
+                                    data-action="show.bs.modal->unsaved-changes#replaceLink"
+                                >
+                                    <p>
+                                        {% trans %}suivi_demandes.edit.modal_confirm.message{% endtrans %}
+                                    </p>
+                                    <twig:block name="footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            {% trans %}suivi_demandes.edit.modal_confirm.non{% endtrans %}
+                                        </button>
+                                        <a
+                                            href="#"
+                                            role="button"
+                                            class="btn btn--primary"
+                                            {{ stimulus_target('unsaved-changes', 'link') }}
+                                        >
+                                            {% trans %}suivi_demandes.edit.modal_confirm.oui{% endtrans %}
+                                        </a>
+                                    </twig:block>
+                                </twig:BootstrapModal>
+
+                                <twig:DemandeForm
+                                    :form="form"
+                                    :nationalite="nationalite"
+                                    :situation="situation"
+                                    data-bs-spy="scroll"
+                                    data-bs-offset="20"
+                                    data-bs-target="#form-nav"
+                                    tabindex="0"
+                                />
+                            {% else %}
+                                <!--
+                                ...
+                                -->
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% set can_transfer = is_granted(constant('App\\Security\\Voter\\DemandeVoter::TRANSFER'), demande) %}
+            {% set can_terminate = is_granted(constant('App\\Security\\Voter\\DemandeVoter::TERMINATE'), demande) %}
+            <div class="card my-2">
+                <div class="card-body text-center">
+                    <a
+                        class="btn btn-lg btn-outline-secondary btn--am fs-5 my-2"
+                        role="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-confirm"
+                        data-bs-confirm-url="{{ path('suivi_demandes.index') }}"
+                    >
+                        <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                        {% trans %}suivi_demandes.edit.retour{% endtrans %}
+                    </a>
+                    {% if can_edit_donnees %}
+                        <button
+                            type="submit"
+                            class="btn btn-lg btn-outline--primary-light btn--am  fs-5 ms-4 my-2"
+                            form="demande-edit"
+                            name="type-submit-edit"
+                            value="{{ constant('App\\Enum\\TypeSubmitEditEnum::ENREGISTRER') }}"
+                        >
+                            <i class="bi bi-save" aria-hidden="true"></i>
+                            {% trans %}suivi_demandes.edit.enregistrer{% endtrans %}
+                        </button>
+                    {% endif %}
+                    <button
+                        type="{{ can_transfer ? 'submit' : 'button' }}"
+                        class="btn btn-lg btn--primary-light btn--am  fs-5 ms-4 my-2 {{ not can_transfer ? 'disabled' }}"
+                        form="{{ can_transfer ? 'demande-edit'}}"
+                        name="{{ can_transfer ? 'type-submit-edit'}}"
+                        value="{{ constant('App\\Enum\\TypeSubmitEditEnum::TRANSMETTRE') }}"
+                    >
+                        <i class="bi-arrow-up" aria-hidden="true"></i>
+                        {% trans %}suivi_demandes.edit.transmettre_demande{% endtrans %}
+                    </button>
+                    <button
+                        type="{{ can_terminate ? 'submit' : 'button' }}"
+                        class="btn btn-lg btn-outline--primary-light btn--am  fs-5 ms-4 my-2 {{ not can_terminate ? 'disabled' }}"
+                        form="{{ can_terminate ? 'demande-edit'}}"
+                        name="{{ can_terminate ? 'type-submit-edit'}}"
+                        value="{{ constant('App\\Enum\\TypeSubmitEditEnum::TERMINER') }}"
+                    >
+                        <i class="bi-x-square" aria-hidden="true"></i>
+                        {% trans %}suivi_demandes.edit.abandonner_demande{% endtrans %}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

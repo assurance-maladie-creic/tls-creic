@@ -1,0 +1,143 @@
+<div{{ attributes }}>
+    <form name="select-situation">
+        <div class="mx-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="situation" class="mb-1">
+                        {% trans %}components.SelectSituation.situation_label{% endtrans %}
+                    </label>
+                    <select
+                        id="situation"
+                        name="situation"
+                        class="form-select"
+                        data-model="situationValue"
+                        data-action="live#action"
+                        data-action-name="storeSituation"
+                        data-loading="addAttribute(disabled)"
+                    >
+                        <option value="" disabled>
+                            {% trans %}components.SelectSituation.situation_label{% endtrans %}
+                        </option>
+                        {% for situationOption in situationsDemandeur %}
+                            <option value="{{ situationOption.libelle }}">
+                                {{ "entity.situationDemandeur.libelle.#{situationOption.libelle}"|trans }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="nationalite" class="mb-1">
+                        {% trans %}components.SelectSituation.nationalite_label{% endtrans %}
+                    </label>
+                    <select
+                        id="nationalite"
+                        name="nationalite"
+                        class="form-select"
+                        data-model="nationaliteValue"
+                        data-action="live#action"
+                        data-action-name="storeNationalite"
+                        data-loading="addAttribute(disabled)"
+                    >
+                        <option value="" disabled>
+                            {% trans %}components.SelectSituation.nationalite_label{% endtrans %}
+                        </option>
+                        {% for nationaliteOption in pays %}
+                            {% if nationaliteOption.codeIso != 'xx' %}
+                                <option value="{{ nationaliteOption.codeIso }}">
+                                    {{ "entity.pays.nationalite.#{nationaliteOption.codeIso}"|trans }}
+                                </option>
+                            {% endif %}
+                        {% endfor %}
+                        <option value="xx">
+                            {{ "entity.pays.nationalite.xx"|trans }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-4">
+                <div class="col-md-6">
+                    {% if situationValue == 'Salarié' %}
+                        <label for="pays-salarie" class="mb-1">
+                            {% trans %}components.SelectSituation.pays_salarie_label{% endtrans %}
+                        </label>
+                        <select
+                            id="pays-salarie"
+                            name="pays-salarie"
+                            class="form-select"
+                            data-model="paysSalarieValue"
+                            data-loading="addAttribute(disabled)"
+                        >
+                            <option value="" disabled></option>
+                            <option value="fr">{{ "entity.pays.nom.fr"|trans }}</option>
+                            <option value="autre">{{ "entity.pays.nom.autre"|trans }}</option>
+                        </select>
+                    {% elseif situationValue == 'Travailleur indépendant' %}
+                        <label for="pays-travailleur-independant" class="mb-1">
+                            {% trans %}components.SelectSituation.pays_travailleur_independant_label{% endtrans %}
+                        </label>
+                        <select
+                            id="pays-travailleur-independant"
+                            name="pays-travailleur-independant"
+                            class="form-select"
+                            data-model="paysTravailleurIndependantValue"
+                            data-loading="addAttribute(disabled)"
+                        >
+                            <option value="" disabled></option>
+                            <option value="fr">{{ "entity.pays.nom.fr"|trans }}</option>
+                            <option value="autre">{{ "entity.pays.nom.autre"|trans }}</option>
+                        </select>
+                    {% elseif situationValue == 'Pensionné' %}
+                        <label for="pays-travailleur-independant" class="mb-1">
+                            {% trans %}components.SelectSituation.pays_pensionne_label{% endtrans %}
+                        </label>
+                        <select
+                            id="pays-pensionne"
+                            name="pays-pensionne"
+                            class="form-select"
+                            data-model="paysPensionneValue"
+                            data-loading="addAttribute(disabled)"
+                        >
+                            <option value="" disabled></option>
+                            <option value="fr">{{ "entity.pays.nom.fr"|trans }}</option>
+                            <option value="ch">{{ "entity.pays.nom.ch"|trans }}</option>
+                            <option value="autre">{{ "entity.pays.nom.eee"|trans }}</option>
+                            <option value="autre">{{ "entity.pays.nom.neeech"|trans }}</option>
+                        </select>
+                    {% elseif situationValue == "Demandeur d'emploi indemnisé" %}
+                        <label for="pays-indemnisation" class="mb-1">
+                            {% trans %}components.SelectSituation.pays_indemnisation_label{% endtrans %}
+                        </label>
+                        <select
+                            id="pays-indemnisation"
+                            name="pays-indemnisation"
+                            class="form-select"
+                            data-model="paysIndemnisationValue"
+                            data-loading="addAttribute(disabled)"
+                        >
+                            <option value="" disabled></option>
+                            <option value="fr">{{ "entity.pays.nom.fr"|trans }}</option>
+                            <option value="autre">{{ "entity.pays.nom.autre"|trans }}</option>
+                        </select>
+                    {% endif %}
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="spinner-border" role="status" data-loading>
+                    <span class="visually-hidden">
+                        {% trans %}components.SelectSituation.chargement{% endtrans %}
+                    </span>
+                </div>
+            </div>
+            {% if computed.canContinue %}
+                <div class="text-center mt-4 mb-4">
+                    <button formaction="{{ path(computed.continueRoute) }}" type="submit" class="btn btn--primary btn--am mt-3" data-loading="addAttribute(disabled)">
+                        {% trans %}components.SelectSituation.continuer{% endtrans %}
+                    </button>
+                </div>
+            {% endif %}
+        </div>
+    </form>
+</div>

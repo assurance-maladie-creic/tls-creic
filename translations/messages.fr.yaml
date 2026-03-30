@@ -1,0 +1,820 @@
+header:
+    accueil: 'Accueil'
+    deja_inscrit: 'Déjà inscrit ?'
+    mes_informations_de_connexion: 'Mes informations de connexion'
+    cloturer_espace_personnel: 'Clôturer mon espace personnel'
+    deconnexion: 'Déconnexion'
+
+footer:
+    mentions_legales_cgu:
+        lien: 'Mentions légales et CGU'
+        titre: "Conditions d'utilisation du service d'affiliation des communautaires européens inactifs"
+        preambule:
+            titre: 'Préambule'
+            contenu: 'Les présentes conditions générales d’utilisation ont pour objet de définir les modalités et conditions dans lesquelles la Caisse Nationale de l’Assurance Maladie met le service à disposition de l’Utilisateur.<br><br>
+                    En acceptant sans réserve les présentes Conditions Générales d’Utilisation, l’utilisateur confirme son accord des conditions générales d’utilisation suivantes sur le Téléservice « Service d’affiliation des communautaires européens inactifs » et consent au traitement de ses données à caractère personnel tel que décrit ci-après.<br><br>
+                    Le TLS, ses contenus et services et les présentes Conditions Générales d’Utilisation sont régis par le droit français, quel que soit le lieu d’utilisation. En cas de contestation éventuelle, et après l’échec de toute tentative de recherche d’une solution amiable, les tribunaux administratifs français seront seuls compétents pour répondre à ce litige.'
+        presentation_service:
+            titre: '1. Présentation du service'
+            contenu: 'Ce service s’adresse à l’ensemble des ressortissants des pays membres de l’Union Européenne, de l’Espace Economique Européen ou de la Suisse (UE-EEE-Suisse) inactifs installés en France depuis plus de trois mois de façon permanente.<br><br>
+                    Il permet à tout demandeur européen inactif de :<br>
+                    -	effectuer sa demande en ligne d’affiliation au régime d’Assurance Maladie français auprès de la CPAM du Gard (CREIC)<br>
+                    -	déposer les justificatifs correspondants<br><br>
+
+                    Ce service de dépôt est disponible et accessible sur ameli.fr, le site de l’assurance maladie.<br><br>
+
+                    Les ressortissants communautaires peuvent demander leur affiliation auprès du régime français d’assurance maladie afin de bénéficier de la prise en charge des frais de santé.<br><br>
+                    Le téléservice a pour objectif de dématérialiser les échanges de ces demandeurs avec le CREIC et offre un espace d’échanges confidentiel afin de consolider la validité de la demande (routage de la demande suite questionnaire, création / Gestion compte utilisateur, suivi d’une demande avec accès à un espace de communication avec le CREIC, dépôt de pièces justificatives, traduction autres langues).<br><br>
+                    Le présent service contient des fonctionnalités d’envoi de messages interactifs et personnalisés.<br><br>
+                    L’utilisation du présent service nécessite l’expression du consentement à la création d’un compte ainsi qu’à l’acceptation des présentes conditions générales d’utilisation. Ces consentements sont matérialisés par une case dédiée à cocher.'
+        acces_service:
+            titre: '2. Accès au service'
+            modalites:
+                titre: '2.1 Modalités d’accès au service'
+                contenu: 'Les utilisateurs de ce service peuvent y accéder via le site internet de l’assurance maladie édité à l’adresse suivante https://inactif-europeen.ameli.fr. L’utilisation de ce service sont totalement gratuite (hors coûts éventuellement liés à votre abonnement auprès d’un fournisseur d’accès).'
+            disponibilite:
+                titre: '2.2 Disponibilité du service'
+                contenu: 'Le présent service est accessible 7 jours sur 7 et 24 heures sur 24 à l’exception des cas de force majeure, de difficultés informatiques, de difficultés liées à la structure du réseau de télécommunication ou de difficultés techniques.<br>
+                    Pour des raisons de maintenance, l’assurance maladie pourra interrompre l’accès au service et s’efforcera d’en avertir préalablement les utilisateurs. L’indisponibilité du service ne donne droit à aucune indemnité.<br>
+                    Un support/assistance est assuré 5j/7J de 9h à 17h (indisponible de 17h à 9h, et les samedis et dimanches).<br>
+                    L’assurance maladie ne saurait être tenue responsable des conséquences liées à une absence de disponibilité du service pour l’un des motifs susmentionnés.'
+        gestion_profil:
+            titre: '3. Gestion de profil'
+            creation_compte:
+                titre: "3.1 Création d'un compte"
+                contenu: "Afin de pouvoir bénéficier de ce service, l’utilisateur doit préalablement créer un compte en renseignant ses coordonnées personnelles telles que précisées ci-après et accepter les présentes conditions générales d’utilisation.<br><br>
+                         Lors de sa première connexion, l’utilisateur est invité à :<br>
+                         •	saisir son adresse de courrier électronique ;<br>
+                         •	choisir un mot de passe composé d’au moins 12 caractères dont au moins une majuscule, une minuscule, un chiffre et un caractère spécial.<br><br>
+                         Le mot de passe du service est strictement personnel, il convient de le garder secret. Par sécurité, l'utilisateur est invité à ne jamais communiquer le mot de passe permettant l'accès à son compte personnel.<br><br>
+                         Une fois ces données renseignées pour créer son compte, un email de confirmation est envoyé à l’adresse de courrier électronique renseignée pour valider son inscription.<br><br>
+                         À partir de la deuxième connexion, l’utilisateur a la possibilité de personnaliser son accès au service et notamment de :<br>
+                         •	modifier des informations personnelles et mot de passe<br>
+                         •	supprimer son compte"
+            gestion_compte:
+                titre: "3.2 Gestion du compte"
+                utilisation_email:
+                    titre: "3.2.1 Utilisation de l’adresse de courrier électronique"
+                    contenu: "La saisie d'une adresse email valide est obligatoire pour bénéficier de ce service notamment aux fins de création d’un compte.<br>
+                             En renseignant et confirmant son email, l’utilisateur accepte de recevoir des messages issus du service sur son adresse électronique."
+                notifications:
+                    titre: "3.2.2 Notifications"
+                    contenu: "L’utilisateur recevra, tout au long du service, un ensemble de :<br>
+                             •	messages d’information lui notifiant la réception de messages dans son espace personnel,<br>
+                             •	messages relatifs à la gestion de son compte personnel,<br>
+                             •	messages relatifs à l’instruction de sa demande."
+                perte_mdp:
+                    titre: "3.2.3 Perte de son mot de passe"
+                    contenu: "L’utilisateur aura la possibilité, en cas de perte de son mot de passe, d’en générer un nouveau via un lien figurant à proximité du champ de saisie du mot de passe. Ce lien renvoie sur un formulaire de saisie de l’identifiant (adresse email) dont la confirmation génère l’envoi d’un email à l’utilisateur comprenant un lien à usage unique. En utilisant ce lien, l’utilisateur accède à une page lui permettant d’en saisir un nouveau."
+                changement_mdp:
+                    titre: "3.2.4 Changement de mot de passe"
+                    contenu: "Le changement de mot de passe est possible depuis l’onglet « changement des préférences », par saisie dans trois champs distincts du mot de passe actuel, du nouveau mot de passe et de la confirmation de ce nouveau mot de passe."
+                consultation_donnees_compte:
+                    titre: "3.2.5 Consultation des données du compte"
+                    contenu: "L’utilisateur a la possibilité d’accéder à l’ensemble des données issues de son compte et de prendre connaissance des informations le concernant. Le demandeur ne peut consulter que le statut du dossier et les principales informations en cas de prise en compte de la demande par le CREIC."
+            suppression_compte:
+                titre: "3.3 Suppression du compte"
+                contenu: "La suppression de compte est possible uniquement si l’Utilisateur n’a aucune demande en cours. Elle est accessible dans l’onglet « changement des préférences ». Elle est activée après saisie de son mot de passe par l’Utilisateur. Elle entraine la suppression définitive de son compte et la suppression de tout envoi de messages issus du service. La suppression du compte n’entraîne pas la suppression du dossier demandeur (ni des données associées) au CREIC."
+        protection_donnees:
+            titre: "4. Protection des données personnelles"
+            preambule:
+                titre: "4.1 Préambule"
+                contenu: "L’Assurance Maladie traite l’ensemble de données personnelles qui lui sont confiées dans le cadre de ses missions et dans le respect des exigences règlementaires relatives à la protection des données personnelles et de la vie privée des personnes. La Politique générale de protection des données personnelles de l'Assurance Maladie est disponible sur ameli.fr.<br><br>
+                         Ce traitement a pour finalité principale de permettre aux demandeurs d’effectuer certaines démarches et d’accéder aux informations les concernant et qui sont détenues par les organismes d’assurance maladie dans le cadre de leurs missions."
+            responsable_traitement:
+                titre: "4.2 Responsable de traitement - Sous-traitant"
+                contenu: "La Cnam est le responsable du traitement de données au sens du règlement général sur la protection des données (RGPD) et de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiée.<br>br>
+                         A ce titre, elle s’engage à prendre toutes précautions utiles au regard de la nature des données et des risques présentés par le traitement pour préserver la sécurité des données et, notamment, empêcher qu’elles soient déformées, endommagées ou que des tiers non autorisés y aient accès.<br><br>
+                         L’Assurance Maladie ne pourra être tenue pour responsable des dommages que causerait un utilisateur du TLS CREIC en exploitant des informations issues de ce site à d’autres fins que celles auxquelles elles sont destinées."
+            donnees_collectees:
+                titre: "4.3 Données collectées"
+                contenu: "Les informations du compte proviennent des données saisies par l’utilisateur, des pièces justificatives déposées par l’utilisateur, et des bases de données mises en œuvre par l’Assurance Maladie dans le cadre de ses missions et notamment pour assurer l’affiliation, le remboursement, la gestion de la relation avec les publics.<br><br>
+                         Les catégories de données traitées sont :<br>
+                         •	des données d’identification et de contact du demandeur dont les NIR, civilité, nom, prénom, date de naissance, nationalité, adresse de courrier électronique, adresse postale, numéros de téléphone<br>
+                         •	des données d’identification concernant les ayants droit dont les civilité, nom, prénom, date de naissance, nationalité, lien de parenté avec le demandeur<br>
+                         •	des données d’identification concernant l’éventuel hébergeant du demandeur dont les civilité, nom, prénom, date de naissance, lien de parenté avec le demandeur<br>
+                         •	des données relatives aux contrats d’organismes pour la couverture maladie obligatoire et complémentaire dont les dates, bénéfice d’une prestation dont la complémentaire santé solidaire<br>
+                         •	des données financières dont les ressources du foyer<br>
+                         •	des données relatives à la situation professionnelle ainsi que la composition du foyer<br>
+                         •	des traces des accès en consultation ou en modification aux données relatives aux demandes<br><br>
+                        Les organismes de l’Assurance Maladie peuvent être tenus de fournir ou échanger des informations avec leurs partenaires (Caisses d’Allocations Familiales, Direction Générale des Finances Publiques, Pôle Emploi, etc.) dans le cadre de leurs missions ou d’obligations légales.<br><br>
+                        Une information particulière est alors également portée à la connaissance des personnes concernées via les mentions spécifiques d’information et les éventuelles Conditions Générales d’Utilisation (CGU) concernant lesdits services."
+            duree_conservation:
+                titre: "4.4 Durée de conservation des données"
+                contenu: "L’ensemble des documents échangés sont conservés dans DIADEME et non dans le Back Office du téléservice CREIC.<br>
+                         Les données concernant les demandes d’un utilisateur sont conservées pendant 5 ans après la dernière décision rendue sur une demande de l’utilisateur."
+            securite_donnees:
+                titre: "4.5 Sécurité des données"
+                contenu: "Avant toute utilisation du compte, il appartient aux assurés de s'assurer, d'une part, que le navigateur ou le réseau à partir duquel ils accèderont au site (réseau domestique ou réseau de l'opérateur de téléphonie mobile) et, d'autre part, que l'environnement d'exploitation des appareils sur lesquels l’application est installée, permettent l'accès dans une configuration sécurisée.<br><br>
+                         Il leur appartient également de vérifier que la configuration informatique utilisée et l'environnement d'exploitation du ou des appareils utilisés sont sécurisés et ne contiennent notamment aucun virus et qu'ils sont en bon état de fonctionnement.<br><br>
+                         Seuls les agents individuellement habilités par le directeur de leur organisme local d’assurance maladie peuvent accéder aux données strictement nécessaires à l’exercice de leurs missions, dans la limite du besoin d’en connaître et le respect du secret professionnel.<br><br>
+                         Il est demandé à l’utilisateur de modifier son mot de passe à fréquence régulière."
+            droit_acces:
+                titre: "4.6 Droit d’accès, de rectification et d’opposition"
+                contenu: "Conformément à la règlementation relative à la protection des données en vigueur, l’assuré dispose d’un droit d’accès et de rectification sur le traitement de ses données.<br><br>
+                         Ces droits s’exercent auprès du Directeur de sa caisse d’assurance maladie de rattachement en contactant le délégué à la protection des données (DPO).<br><br>
+                         En cas de difficultés dans l’application des droits énoncés ci-dessus, toute personne peut également introduire une réclamation auprès de l’autorité indépendante en charge du respect de la protection des données personnelles :<br><br>
+                         Commission Nationale Informatique et Libertés - CNIL – 3 Place de Fontenoy TSA – 80715 – 75334 PARIS CEDEX 07."
+            gestion_traceurs:
+                titre: "4.7 Gestion des traceurs (cookies)"
+                contenu: "Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette ou mobile) lors de la visite de notre site/plateforme/application. Il contient plusieurs données dont le nom du serveur qui l'a déposé, un identifiant sous forme de numéro unique, éventuellement une date d'expiration.<br><br>
+                         Les cookies ont différentes fonctions. Ils peuvent permettre à celui qui l’a déposé de reconnaître un internaute, d’une visite à une autre, grâce à un identifiant unique.<br><br>
+                         Certains cookies peuvent aussi être utilisés pour stocker le contenu d’un mot de passe, d’autres pour enregistrer les paramètres de langue d’un site, d’autres encore de vous adresser des services personnalisés.<br><br>
+                         L’Assurance Maladie s’engage, dans le cadre des missions qui lui sont confiées, à assurer la protection, la confidentialité et la sécurité de l’ensemble de vos données personnelles dans le respect de votre vie privée. Lorsque vous naviguez sur notre site, nous pouvons être amenés à déposer différents types de cookies sur votre terminal. Ils ont des finalités différentes décrites ci-dessous.<br><br>
+                         Les cookies strictement nécessaires au fonctionnement du site : Ces cookies permettent de garantir des fonctionnalités importantes du site comme la possibilité de passer d’une page à l’autre.<br><br>
+                         Le site web ne pouvant fonctionner correctement sans eux, ils ne peuvent être désactivés.<br><br>
+                         <div class='row'>
+                            <div class='col-10 mx-auto'>
+                                <table class='table table-bordered'>
+                                    <tr>
+                                        <th class='w-25 table-primary align-middle text-center'>Nom des cookies</th>
+                                        <th class='w-50 table-primary align-middle text-center'>Finalité</th>
+                                        <th class='w-25 table-primary align-middle text-center'>Durée de conservation</th>
+                                    </tr>
+                                    <tr>
+                                        <td>PHPSESSID</td>
+                                        <td>Cookie de session (cookie permettant au site de reconnaître l’utilisateur d’une page à l’autre pendant sa visite ; quand le navigateur Internet est fermé, ce cookie disparaît et il n’y a plus de trace sur l’appareil de l’utilisateur de son passage sur le site)</td>
+                                        <td>Durée de la session de l’utilisateur</td>
+                                    </tr>
+                                 </table>
+                            </div>
+                         </div>
+                         "
+        responsabilite:
+            titre: "5. Responsabilité"
+            avertissement_contenu:
+                titre: "5.1 Avertissement sur les contenus du service"
+                contenu: "L’utilisateur reconnait que la responsabilité de l’Assurance Maladie ne pourra être recherchée, au titre de l'information et des services proposés, et l’utilisateur accepte que l'utilisation de ces informations et services s'effectue sous sa seule et entière responsabilité, son contrôle et sa direction."
+            responsabilite_utilisateur:
+                titre: "5.2 Responsabilité de l’utilisateur"
+                contenu: "Les données traitées dans le cadre du service sont des données à caractère personnel, couvertes à ce titre par les dispositions de la loi Informatique et libertés et dont la violation est réprimée par l’article 226-13 du code pénal.<br><br>
+                         L’utilisateur est seul responsable de l’utilisation du service et des contenus renseignés et exportés par ses soins conformément à son usage, dans le respect des lois et règlements en vigueur et des présentes conditions générales d’utilisation.<br><br>
+                         L’utilisateur est responsable de la conservation de ses identifiant et mot de passe. Il s’interdit donc de les divulguer à quiconque. En cas de perte ou de vol de ses identifiants d’accès, l’utilisateur peut changer son mot de passe.<br><br>
+                         L’utilisateur s’engage toutefois à respecter les règles d'ordre public qui s’imposent à lui telle que par exemple la réglementation en matière de contenu pornographique, raciste ou illicite qui serait susceptible de porter atteinte à l'intégrité ou à la sensibilité d'un autre utilisateur ou d’une institution par l'intermédiaire de messages, textes ou images provocants.<br><br>
+                         À ce titre, vous vous engagez à vous abstenir de diffuser au sein des services interactifs qui vous sont proposés des messages à caractère injurieux, insultant, dénigrant, dégradant ou n'ayant aucun lien avec les questions abordées."
+            responsabilite_am:
+                titre: "5.3 Responsabilité de l’Assurance maladie"
+                contenu: "En sa qualité de responsable de traitement, l’Assurance maladie a pris toutes les mesures utiles pour assurer la sécurité des données contenues dans le service.<br><br>
+                         L’Assurance maladie dégage toute responsabilité en cas de :<br>
+                         •	survenance d'un événement de force majeure ayant un impact sur le service,<br>
+                         •	problèmes liés au réseau internet,<br>
+                         •	pannes ou dommages résultant des équipements de l'utilisateur ou encore de la contamination du système informatique de l'utilisateur par des virus, attaques et malveillances de tiers,<br>
+                         •	utilisation du TLS par l'utilisateur non conforme aux présentes conditions générales d'utilisation.<br><br>
+                         L’Assurance maladie ne saurait être tenue responsable des conséquences liées à une absence de disponibilité du service pour l’un des motifs mentionnés dans la partie « Disponibilité du service »."
+        propriete_intellectuelle:
+            titre: "6. Propriété intellectuelle"
+            contenu: "Pour tous les contenus, textes et logos présentés sur le site internet : tous droits d'auteur des œuvres sont réservés.<br><br>
+                     Sauf autorisation formelle écrite préalable, la reproduction ainsi que toute utilisation des œuvres, autres que la consultation individuelle et privée, sont interdites.<br><br>
+                     Toute demande d'autorisation pour quelque utilisation que ce soit doit être adressée à :<br><br>
+                     ASSURANCE MALADIE<br>
+                    Direction de la communication<br>
+                    26-50, avenue du Professeur André-Lemierre<br>
+                    75986 Paris cedex 20"
+        fermer: 'Retour'
+
+home:
+    index:
+        title: 'Accueil'
+        heading: 'Inscription des ressortissants européens inactifs à l’Assurance Maladie'
+        premiere_demande: 'C’est ma première demande'
+        renouvellement: 'Je demande un renouvellement'
+        pourquoi:
+            titre: 'Pourquoi vous inscrire sur ce site ?'
+            contenu: 'Vous répondez aux 3 critères suivants :<br>
+                <ol>
+                    <li>Vous êtes ressortissant d’un pays membre de l’Union Européenne, de l’Espace Economique Européen ou de la Suisse (UE-EEE-Suisse)</li>
+                    <li>Vous êtes installé de façon permanente sur le territoire français depuis plus de 3 mois</li>
+                    <li>Vous n’exercez pas d’activité professionnelle et vous n’êtes ni retraité, ni pensionné, ni étudiant.</li>
+                </ol>
+                Vous pouvez potentiellement prétendre à une couverture Assurance Maladie afin de bénéficier de la prise en charge d’une partie de vos frais de santé.'
+        je_m_inscris:
+            titre: 'Après avoir vérifié ma situation, je m’inscris en 3 étapes'
+            etape_1:
+                libelle: 'Je m’identifie'
+                detail: 'Je renseigne mes informations personnelles'
+            etape_2:
+                libelle: 'Je crée mon espace personnel'
+                detail: 'Je confirme mes informations puis valide mon email pour accéder à mon espace'
+            etape_3:
+                libelle: 'Je transmets mes pièces justificatives'
+                detail: 'Je télécharge les documents demandés en fonction de ma situation'
+
+    situation:
+        title: 'Ma situation'
+        heading: 'Inscription des ressortissants européens inactifs à l’Assurance Maladie'
+        inscription_en_ligne: 'Je m’inscris en ligne'
+    ...:
+        ...: ...
+
+redirection:
+    caisse:
+        title: 'Redirection'
+        heading: 'Pour demander votre affiliation à l’Assurance Maladie, vous devez prendre contact avec votre CPAM de résidence.'
+        instruction: 'Nous vous invitons à joindre à votre demande le récapitulatif de votre situation.'
+        imprimer_pieces_a_fournir: 'Imprimer le récapitulatif de ma situation'
+        retour: 'Retour'
+        a_bientot: 'À bientôt !'
+
+inscription:
+    pre_inscription:
+        title: 'Pré-inscription'
+        ressources_insuffisantes: >
+            Vos ressources sont en-dessous des minima sociaux.
+            Vous allez devoir faire une demande d’AME auprès de votre CPAM de
+            résidence.
+            Pour vous faire gagner du temps et vous aider dans cette
+            démarche, nous avons préparé un résumé des informations
+            que vous avez déjà communiquées et qui vous serviront à
+            remplir votre demande d’AME.
+        imprimer_recap_ame: 'Imprimer le récapitulatif en vue de ma demande d’AME'
+
+    verification_email:
+        flash_success: 'Votre espace personnel a été activé. Vous pouvez vous connecter.'
+
+liste_pieces:
+    index:
+        title: 'Liste des documents à fournir'
+        heading: 'Quels sont les documents nécessaires à mon inscription ?'
+        documents_necessaires: 'Documents nécessaires dans tous les cas'
+        justificatif_identite:
+            title: 'Justificatif d’identité et de nationalité'
+            detail: 'Votre carte d’identité ou passeport ou toute autre pièce justificative d’état civil et de nationalité'
+        extrait_acte_naissance: 'Extrait d’acte de naissance'
+        justificatif_residence:
+            title: 'Justificatifs de résidence'
+            detail1: 'si vous êtes locataire : le bail, les trois dernières quittances de loyer'
+            detail2: 'si vous êtes propriétaire : votre dernière taxe foncière'
+            detail3: 'si vous êtes hébergé(e) : la dernière quittance de loyer ou d’EDF de l’hébergeant, l’attestation d’hébergement, une pièce d’identité de l’hébergeant'
+        justificatif_ressources:
+            title: 'Justificatifs de ressources d’origines française et/ou étrangère des 12 derniers mois'
+            detail1: 'vos bulletins de salaire, allocations chômage, pension de retraite, rente, RSA, ASPA, épargne, revenus fonciers ou issus de placements financiers…'
+            detail2: 'toutes pièces justifiant de votre situation fiscale : avis d’imposition ou déclaration d’impôt'
+        documents_supplementaires: 'Documents supplémentaires selon votre situation'
+        vous_etes_marie: 'Vous êtes marié(e) ou pacsé(e)'
+        acte_mariage: 'L’acte de mariage / de pacs'
+        vos_enfants_scolarises: 'Vos enfants sont scolarisés'
+        certificats_scolarites: 'Le (les) certificat(s) de scolarité'
+        vous_etes_etudiant: 'Vous êtes étudiant(e)'
+        carte_etudiant: 'Votre carte d’étudiant(e)'
+        vous_etes_demandeur_emploi: 'Vous êtes demandeur d’emploi'
+        attestation_pole_emploi: 'Votre attestation Pôle Emploi'
+        vous_etes_pensionne: 'Vous êtes pensionné(e)'
+        attestation_pension: 'Votre attestation de pension ou votre notification de rente'
+        allocation_chomage_pays_precedent: 'Vous bénéficiez d’une allocation chômage versée par votre précédent Etat d’emploi'
+        document_portable_u2: 'Votre document portable U2'
+        regime_assurance_maladie_pays_precedent: 'Vous bénéficiez d’un régime d’assurance maladie d’un Etat de l’UE/EEE*/Suisse'
+        formulaire_s1:
+            title: 'Votre formulaire S1 ou de refus de S1'
+            detail:
+                '* Les pays de l’UE/EEE sont les suivants : Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie,
+                Irlande, Islande, Italie, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Norvège, Pays-Bas, Pologne, Portugal, République Tchèque, Roumanie, Slovaquie, Slovénie
+                et Suède.'
+            detail_retour: >
+                * Les pays de l’UE/EEE sont les suivants : Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie,
+                Finlande, France, Grèce, Hongrie, Irlande, Islande, Italie, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Norvège, Pays-Bas,
+                Pologne, Portugal, République Tchèque, Roumanie, Slovaquie, Slovénie et Suède.
+        assurance_privee: 'Vous bénéficiez d’une assurance privée contractée en France ou à l’étranger'
+        contrat_assurance_privee: 'Votre contrat d’assurances accompagné des garanties afférentes'
+        couverture_maladie_perdue: 'Si vous avez perdu le bénéfice de cette couverture maladie'
+        justificatif_perte_couverture_maladie:
+            title: 'Tout justificatif prouvant cette impossibilité de conserver votre couverture maladie'
+            detail: 'Perte de revenus, décès ou séparation du conjoint…'
+        instruction_finalisation: 'Pour finaliser votre inscription, vous devez, dès que possible, déposer dans votre espace personnel les documents nécessaires à l’envoi de votre demande (voir ci-dessus)'
+        possession_documents: 'Je suis en possession, à minima, de l’ensemble des documents nécessaires à l’envoi de ma demande.'
+        revenir_plus_tard: 'Revenir plus tard'
+        poursuivre: 'Poursuivre'
+    revenir_plus_tard:
+        title: 'Revenir plus tard'
+        heading: 'Vous souhaitez enregistrer votre demande plus tard'
+        proposition_impression:
+            'Pour vous aider à préparer au mieux l’enregistrement de votre demande, nous vous proposons d’imprimer la liste des documents nécessaires.'
+        impression: 'Imprimer la liste des documents'
+        retour: 'Retour'
+        a_bientot: 'A bientôt !'
+
+registration:
+    register:
+        title: 'Je crée mon espace personnel'
+        poursuivre: 'Poursuivre'
+        je_ne_suis_pas_un_robot: 'Je ne suis pas un robot'
+        cliquer_pour_verification: 'Cliquer pour démarrer la vérification'
+        soumettre: 'Soumettre'
+        valider_mes_informations: 'Valider mes ressources'
+        case_cgu_1: 'En cochant cette case, je déclare avoir pris connaissance des'
+        case_cgu_lien: 'conditions générales d’utilisation'
+        case_cgu_2: 'du site internet et les accepter'
+    confirm:
+        title: 'J’active mon espace personnel'
+        heading: 'Votre espace personnel a été créé.'
+        explication_email: 'Vous allez recevoir un email à l’adresse %email%. Cet email contient le lien d’activation de votre espace personnel.'
+        invitation_activation: 'Nous vous invitons à cliquer sur ce lien d’activation.'
+        invitation_connexion: 'Vous pourrez alors vous connecter à votre espace personnel pour compléter votre demande et nous l’adresser.'
+
+security:
+    login:
+        title: 'J’accède à mon espace personnel'
+        mdp_oublie: 'Mot de passe oublié ?'
+        renvoyer_email_activation: "Renvoyer l'email d'activation"
+
+suivi_demandes:
+    index:
+        title: 'Suivi de mes demandes'
+        bienvenue: 'Bienvenue !'
+        suivi_de_mes_demandes: 'Suivi de mes demandes'
+        date_transmission: 'Date de transmission'
+        objet_demande: 'Objet de la demande'
+        etat_traitement: 'État de traitement'
+        infos_complementaires: 'Informations complémentaires'
+        modifier: 'Modifier'
+        consulter: 'Consulter'
+        nouvelle_demande: 'Faire une nouvelle demande'
+        flash_transmission_success: 'La demande a bien été transmise.'
+        flash_cloture_success: 'La demande a été clôturée.'
+    edit:
+        title: 'Éditer ma demande'
+        mes_informations: 'Mes informations'
+        pieces_jointes: 'Mes documents'
+        retour: 'Retour'
+        enregistrer: 'Enregistrer'
+        transmettre_demande: 'Transmettre la demande'
+        abandonner_demande: 'Abandonner la demande'
+        flash_success: 'La demande a bien été enregistrée.'
+        flash_transmission_error: "La demande n'a pas été transmise. Veuillez corriger vos informations avant de réessayer."
+        flash_save_error: "La demande n'a pas été enregistrée. Veuillez corriger vos informations avant de réessayer."
+        flash_cloture_error: "La demande n'a pas été abandonnée. Veuillez corriger vos informations avant de réessayer."
+        modal_confirm:
+            title: 'Confirmation'
+            message: 'Voulez-vous quitter la section "Mes informations" ? (Toute modification non enregistrée sera perdue)'
+            oui: 'Oui'
+            non: 'Non'
+        demande_commencee: 'Votre demande commencée le'
+        demande_transmise: 'Votre demande transmise le'
+    new:
+        flash_success: 'La demande a bien été enregistrée.'
+    show:
+        title: 'Consulter les informations de ma demande'
+    show_documents:
+        title: 'Consulter les documents déposés'
+    edit_documents:
+        title: 'Documents de la demande'
+        pieces_concernant_demandeur: 'Documents concernant %demandeur%'
+        pieces_concernant_hebergeant: 'Documents concernant %hebergeant%'
+        pieces_concernant_ayant_droit: 'Documents concernant %ayant_droit%'
+        pieces_concernant_foyer: 'Documents concernant le foyer'
+        autres_pieces: 'Autres documents'
+        commentaire_documents: 'Vos commentaires sur les documents déposés'
+    edit_document:
+        title: 'Déposer des documents'
+        chargement: 'Chargement'
+        analyse_antivirus_en_cours: 'Analyse antivirus en cours…'
+        consigne: 'Glisser-déposer un document ou cliquer pour insérer un document'
+        erreur: 'Une erreur est survenue lors de l’envoi du document.'
+        apercu_fichier: 'Aperçu du fichier'
+        retourner_liste: 'Retourner à la liste'
+        valider_documents: 'Valider vos documents'
+        contraintes: 'Chaque fichier doit être au format PDF, JPG, JPEG, TIF, TIFF, PNG et ne doit pas excéder la taille de 4Mo. La taille cumulée des fichiers pour ce document ne doit pas dépasser 25Mo.'
+        modal_confirm:
+            title: 'Confirmation'
+            message: 'Les fichiers que vous avez téléchargés vont nous être envoyés, et vous ne pourrez plus ajouter ni supprimer de fichier pour ce document dans quelques minutes. Confirmez-vous la validation de ce document ?'
+            oui: 'Oui'
+            non: 'Non'
+    validate_document:
+        flash_empty_document: 'Vous devez déposer des fichiers avant de valider le document.'
+
+
+
+components:
+    SelectSituation:
+        situation_label: '1 - Ma situation'
+        nationalite_label: '2 - Ma nationalité'
+        pays_salarie_label: 'Le pays où je suis salarié'
+        pays_travailleur_independant_label: 'Le pays où je suis travailleur indépendant'
+        pays_pensionne_label: 'Le pays qui verse ma pension'
+        pays_indemnisation_label: 'Le pays qui verse mon indemnisation chômage'
+        continuer: 'Continuer'
+        chargement: 'Chargement'
+    ...:
+        ...: ...
+    ListeRessourcesFoyer:
+        salaires: 'Salaires'
+        aides_sociales: 'RSA, Allocations, Aides sociales'
+        revenus_fonciers: 'Revenus fonciers'
+        pension_alimentaire: 'Pension alimentaire'
+        epargne: 'Épargne'
+    ...:
+        ...: ...
+
+form:
+    ...:
+        ...: ...
+    login:
+        email_label: 'Email'
+        password_label: 'Mot de passe'
+        me_connecter: 'Me connecter'
+    pre_inscription:
+        mon_identite_label: 'Mon identité'
+        ma_residence_label: 'Ma résidence'
+        mon_foyer_label: 'Mon foyer'
+        user_label: 'Je crée mon espace'
+    mon_identite:
+        mes_informations_personnelles_label: 'Mes informations personnelles'
+        ma_situation_label: 'Ma situation'
+        mes_informations_de_contact_label: 'Mes informations de contact'
+    mes_informations_personnelles:
+        civilite_label: 'Civilité'
+        nom_label: 'Nom'
+        nom_naissance_label: 'Nom patronymique (nom de naissance)'
+        prenom_label: 'Prénom'
+        date_naissance_label: 'Date de naissance'
+        nationalite_label: 'Nationalité'
+    ma_situation:
+        situation_sociopro_label: 'Situation socio-professionnelle'
+        demandeur_emploi_label: 'Je suis demandeur d’emploi'
+        situation_famille_label: 'Situation de famille'
+        pays_residence_precedent_label: 'Pays de résidence précédent'
+        region_residence_precedente_label: 'Région de résidence précédente'
+    mes_informations_de_contact:
+        tel_mobile_label: 'N° de téléphone mobile'
+        tel_fixe_label: 'N° de téléphone fixe'
+    ma_residence:
+        hebergement_label: 'Hébergement'
+        adresse_label: 'Mon adresse de résidence en France'
+        mon_arrivee_en_france_label: 'Mon arrivée en France'
+    hebergement:
+        rejoint_personne_installee_en_france_label: 'Je rejoins une personne installée en France'
+        hebergeant_label: 'La personne qui m’héberge'
+    hebergeant:
+        civilite_label: 'Civilité'
+        nom_label: 'Nom'
+        prenom_label: 'Prénom'
+        lien_parente_label: 'Mon lien de parenté avec cette personne'
+    adresse:
+        adresse_label: 'Adresse'
+        complement_adresse1_label: 'Complément d’adresse 1'
+        complement_adresse2_label: 'Complément d’adresse 2'
+        code_postal_label: 'Code postal'
+        ville_label: 'Ville'
+    mon_arrivee_en_france:
+        date_arrivee_france_label: 'Date d’arrivée en France'
+        couverture_maladie_pays_precedent_label: 'Je bénéficiais d’une couverture maladie dans mon pays de résidence précédent'
+        nom_organisme_assurant_couverture_label: 'Nom de l’organisme qui assurait ma couverture maladie'
+    mon_foyer:
+        les_personnes_qui_m_accompagnent_label: 'Les personnes qui m’accompagnent'
+        ressources_de_mon_foyer_label: 'Ressources de mon foyer'
+    les_personnes_qui_m_accompagnent:
+        accompagne_par_famille_label: 'Je viens en France avec d’autres membres de ma famille'
+        membres_famille_label: 'Les membres de ma famille'
+    ressources_de_mon_foyer:
+        total_ressources_foyer_3_mois_label: 'Montant total des ressources du foyer au cours des 3 derniers mois :'
+        total_ressources_foyer_12_mois_label: 'Montant total des ressources du foyer au cours des 12 derniers mois :'
+    total_ressources_foyer_3_mois:
+        ressources_label: 'Vos ressources (en euros)'
+        ressources_conjointe_label: 'Ressources de votre conjoint(e) ou concubin(e) (en euros)'
+        ressources_autres_membres_famille_label: 'Ressources des autres membres de la famille (en euros)'
+    total_ressources_foyer_12_mois:
+        ressources_label: 'Vos ressources (en euros)'
+        ressources_conjointe_label: 'Ressources de votre conjoint(e) ou concubin(e) (en euros)'
+        ressources_autres_membres_famille_label: 'Ressources des autres membres de la famille (en euros)'
+    membre_famille:
+        civilite_label: 'Civilité'
+        nom_label: 'Nom'
+        prenom_label: 'Prénom'
+        date_naissance_label: 'Date de naissance'
+        nationalite_label: 'Nationalité'
+        lien_parente_label: 'Lien de parenté avec moi'
+        autre_membre_no: 'Autre membre n°'
+        button_add_label: 'Ajouter un membre supplémentaire'
+        button_delete_label: 'Supprimer'
+    ...:
+        ...: ...
+
+form_type:
+    civilite:
+        !php/const App\Enum\CiviliteEnum::FEMME: 'Mme'
+        !php/const App\Enum\CiviliteEnum::HOMME: 'M.'
+    boolean_choice:
+        'true': 'Oui'
+        'false': 'Non'
+    ...:
+        ...: ...
+    code_postal_autocomplete_field:
+        placeholder: 'Rechercher un code postal…'
+
+entity:
+    pays:
+        nom:
+            'de': 'Allemagne'
+            'at': 'Autriche'
+            'be': 'Belgique'
+            'bg': 'Bulgarie'
+            'cy': 'Chypre'
+            'hr': 'Croatie'
+            'dk': 'Danemark'
+            'es': 'Espagne'
+            'ee': 'Estonie'
+            'fi': 'Finlande'
+            'fr': 'France'
+            'gr': 'Grèce'
+            'hu': 'Hongrie'
+            'ie': 'Irlande'
+            'is': 'Islande'
+            'it': 'Italie'
+            'lv': 'Lettonie'
+            'li': 'Liechtenstein'
+            'lt': 'Lituanie'
+            'lu': 'Luxembourg'
+            'mt': 'Malte'
+            'no': 'Norvège'
+            'nl': 'Pays-Bas'
+            'pl': 'Pologne'
+            'pt': 'Portugal'
+            'cz': 'République Tchèque'
+            'ro': 'Roumanie'
+            'sk': 'Slovaquie'
+            'si': 'Slovénie'
+            'se': 'Suède'
+            'ch': 'Suisse'
+            'af': 'Afghanistan'
+            'za': 'Afrique du sud'
+            'al': 'Albanie'
+            'dz': 'Algérie'
+            'ad': 'Andorre'
+            'ao': 'Angola'
+            'ag': 'Antigua-et-Barbuda'
+            'sa': 'Arabie Saoudite'
+            'ar': 'Argentine'
+            'am': 'Arménie'
+            'au': 'Australie'
+            'az': 'Azerbaïdjan'
+            'bs': 'Bahamas'
+            'bh': 'Bahrein'
+            'bd': 'Bangladesh'
+            'bb': 'Barbade'
+            'by': 'Biélorussie'
+            'bz': 'Belize'
+            'bj': 'Bénin'
+            'bt': 'Bhoutan'
+            'bo': 'Bolivie'
+            'ba': 'Bosnie-Herzégovine'
+            'bw': 'Botswana'
+            'br': 'Brésil'
+            'bn': 'Brunéi Darussalam'
+            'bf': 'Burkina Faso'
+            'bi': 'Burundi'
+            'kh': 'Cambodge'
+            'cm': 'Cameroun'
+            'ca': 'Canada'
+            'cv': 'Cap Vert'
+            'cf': 'République Centrafricaine'
+            'cl': 'Chili'
+            'cn': 'Chine'
+            'co': 'Colombie'
+            'km': 'Comores'
+            'cg': 'Congo'
+            'cd': 'République Démocratique du Congo'
+            'kp': 'Corée du Nord'
+            'kr': 'Corée du Sud'
+            'cr': 'Costa Rica'
+            'ci': "Côte d'Ivoire"
+            'cu': 'Cuba'
+            'dj': 'Djibouti'
+            'do': 'République Dominicaine'
+            'dm': 'Dominique'
+            'eg': 'Egypte'
+            'ae': 'Emirats Arabes Unis'
+            'ec': 'Equateur'
+            'er': 'Erythrée'
+            'us': 'Etats-Unis'
+            'et': 'Ethiopie'
+            'fj': 'Fidji'
+            'ga': 'Gabon'
+            'gm': 'Gambie'
+            'ge': 'Géorgie'
+            'gh': 'Ghana'
+            'gd': 'Grenade'
+            'gt': 'Guatemala'
+            'gn': 'Guinée'
+            'gq': 'Guinée Equatoriale'
+            'gw': 'Guinée-Bissau'
+            'gy': 'Guyana'
+            'ht': 'Haïti'
+            'hn': 'Honduras'
+            'in': 'Inde'
+            'id': 'Indonésie'
+            'iq': 'Irak'
+            'ir': 'Iran'
+            'il': 'Israël'
+            'jm': 'Jamaïque'
+            'jp': 'Japon'
+            'jo': 'Jordanie'
+            'kz': 'Kazakhstan'
+            'ke': 'Kenya'
+            'kg': 'Kirghizstan'
+            'ki': 'Kiribati'
+            'xk': 'Kosovo'
+            'kw': 'Koweït'
+            'la': 'Laos'
+            'ls': 'Lesotho'
+            'lb': 'Liban'
+            'lr': 'Libéria'
+            'ly': 'Libye'
+            'mk': 'Macédoine du Nord'
+            'mg': 'Madagascar'
+            'my': 'Malaisie'
+            'mw': 'Malawi'
+            'mv': 'Maldives'
+            'ml': 'Mali'
+            'ma': 'Maroc'
+            'mh': 'Iles Marshall'
+            'mu': 'Maurice'
+            'mr': 'Mauritanie'
+            'mx': 'Mexique'
+            'fm': 'Etats fédérés de Micronésie'
+            'md': 'Moldavie'
+            'mc': 'Monaco'
+            'mn': 'Mongolie'
+            'me': 'Monténégro'
+            'mz': 'Mozambique'
+            'mm': 'Myanmar'
+            'na': 'Namibie'
+            'nr': 'Nauru'
+            'np': 'Népal'
+            'ni': 'Nicaragua'
+            'ne': 'Niger'
+            'ng': 'Nigéria'
+            'nz': 'Nouvelle-Zélande'
+            'om': 'Oman'
+            'ug': 'Ouganda'
+            'uz': 'Ouzbekistan'
+            'pk': 'Pakistan'
+            'pw': 'Palaos'
+            'ps': 'Palestine'
+            'pa': 'Panama'
+            'pg': 'Papouasie Nouvelle-Guinée'
+            'py': 'Paraguay'
+            'pe': 'Pérou'
+            'ph': 'Philippines'
+            'qa': 'Qatar'
+            'gb': 'Royaume-Uni'
+            'ru': 'Russie'
+            'rw': 'Rwanda'
+            'kn': 'Saint-Christophe-et-Nevis'
+            'lc': 'Sainte-Lucie'
+            'sm': 'Saint-Marin'
+            'vc': 'Saint-Vincent et les Grenadines'
+            'sb': 'Iles Salomon'
+            'sv': 'Salvador'
+            'ws': 'Samoa'
+            'st': 'Sao Tomé-et-Principe'
+            'sn': 'Sénégal'
+            'rs': 'Serbie'
+            'sc': 'Seychelles'
+            'sl': 'Sierra Leone'
+            'sg': 'Singapour'
+            'so': 'Somalie'
+            'sd': 'Soudan'
+            'lk': 'Sri lanka'
+            'ss': 'Soudan du Sud'
+            'sr': 'Suriname'
+            'sz': 'Swaziland'
+            'sy': 'Syrie'
+            'tj': 'Tadjikistan'
+            'tw': 'Taïwan'
+            'tz': 'Tanzanie'
+            'td': 'Tchad'
+            'th': 'Thaïlande'
+            'tl': 'Timor oriental'
+            'tg': 'Togo'
+            'to': 'Tonga'
+            'tt': 'Trinidad et Tobago'
+            'tn': 'Tunisie'
+            'tm': 'Turkmenistan'
+            'tr': 'Turquie'
+            'tv': 'Tuvalu'
+            'ua': 'Ukraine'
+            'uy': 'Uruguay'
+            'vu': 'Vanuatu'
+            'va': 'Vatican'
+            've': 'Venezuela'
+            'vn': 'Vietnam'
+            'wf': 'Iles Wallis et Futuna'
+            'ye': 'Yemen'
+            'zm': 'Zambie'
+            'zw': 'Zimbabwe'
+            'xx': 'Autre'
+            'autre': 'Autre'
+            'eee': 'Espace Economique Européen'
+            'neeech': 'Hors Espace Economique Européen et hors Suisse'
+        nationalite:
+            'fr': 'Française'
+            'gr': 'Grecque'
+            'de': 'Allemande'
+            'ie': 'Irlandaise'
+            'at': 'Autrichienne'
+            'be': 'Belge'
+            'bg': 'Bulgare'
+            'hr': 'Croate'
+            'dk': 'Danoise'
+            'ee': 'Estonienne'
+            'fi': 'Finlandaise'
+            'hu': 'Hongroise'
+            'is': 'Islandaise'
+            'it': 'Italienne'
+            'li': 'Liechtensteinoise'
+            'lt': 'Lituanienne'
+            'lu': 'Luxembourgeoise'
+            'mt': 'Maltaise'
+            'no': 'Norvégienne'
+            'nl': 'Néerlandaise'
+            'pl': 'Polonaise'
+            'pt': 'Portugaise'
+            'ro': 'Roumaine'
+            'sk': 'Slovaque'
+            'si': 'Slovène'
+            'se': 'Suédoise'
+            'ch': 'Suisse'
+            'es': 'Espagnole'
+            'cy': 'Chypriote'
+            'lv': 'Lettone'
+            'cz': 'Tchèque'
+            'xx': 'Autre'
+    situationDemandeur:
+        libelle:
+            'Salarié': 'Salarié'
+            'Travailleur indépendant': 'Travailleur indépendant'
+            'Pensionné': 'Pensionné'
+            'Etudiant': 'Étudiant'
+            "Demandeur d'emploi indemnisé": 'Demandeur d’emploi indemnisé'
+            'Formation rémunérée': 'Formation rémunérée'
+            'Autres situations': 'Autres situations'
+    situationFamiliale:
+        libelle:
+            'Célibataire': 'Célibataire'
+            'Marié(e)': 'Marié(e)'
+            'Pacsé(e)': 'Pacsé(e)'
+            'Vie maritale': 'Vie maritale'
+            'Séparé(e)': 'Séparé(e)'
+            'Divorcé(e)': 'Divorcé(e)'
+            'Veuf(ve)': 'Veuf(ve)'
+    lienParente:
+        libelle:
+            'parent (père ou mère)': 'parent (père ou mère)'
+            'enfant': 'enfant'
+            'conjoint': 'conjoint'
+            'concubin': 'concubin'
+            'autre': 'autre'
+    ...:
+        ...: ...
+
+...:
+    ...: ...
+
+pdf:
+    ...:
+        ...: ...
+    recap_ame:
+        ressources_insuffisantes: 'Vos ressources de ces 12 derniers mois sont en-dessous des minimas sociaux.'
+        doit_faire_demande_ame: 'Vous allez devoir faire une demande d’aide médicale de l’État (AME).'
+        pour_cela: 'Pour cela :'
+        rassembler_documents: 'rassemblez les documents listés ci-dessous,'
+        remplir_formulaire: 'remplissez le formulaire de demande d’aide médicale de l’État (AME),'
+        formulaire_disponible: 'Ce formulaire est disponible à l’adresse :'
+        deposer_formulaire: 'déposez le formulaire et les documents auprès de votre CPAM de résidence.'
+        titre_documents_fournir: 'Documents à fournir dans le cadre de votre demande d’AME'
+        pour_vous_et: 'Pour vous et'
+        chaque_membre: 'chaque membre'
+        de_famille: 'de votre famille qui vous accompagne en France, l’'
+        un: 'un'
+        des_documents_suivants: ' des documents suivants :'
+        passeport: 'passeport'
+        carte_identite: 'carte nationale d’identité'
+        titre_sejour: 'titre de séjour antérieurement détenu'
+        extrait_acte_naissance: 'extrait d’acte de naissance ou livret de famille'
+        autre_doc: 'tout autre document attestant votre identité et celle des personnes à votre charge'
+        personne_vivant_avec_vous: 'Pour une personne vivant avec vous mais n’étant pas de votre famille :'
+        declaration_honneur: 'une déclaration sur l’honneur, signée par vous et cette personne, attestant qu’elle vit sous votre toit et qu’elle se trouve à votre charge effective, totale et permanente depuis plus de 12 mois.'
+        pas_d_adresse_personnelle: 'Si vous n’avez pas d’adresse personnelle ou si vous êtes hébergé(e), l’'
+        attestation_domiciliation_ccas: 'une attestation de domiciliation établie par un Centre Communal ou Intercommunal d’Action Sociale (CCAS ou CIAS) ou un organisme agréé'
+        attestation_honneur: 'attestation sur l’honneur établie par la personne qui vous héberge'
+        situation_irreguliere: 'Vous résidez en France, en situation irrégulière, depuis plus de 3 mois, l’'
+        des_documents_ci_dessous: ' des documents ci-dessous :'
+        passeport_entree: 'passeport indiquant la date d’entrée en France'
+        contrat_location_quittance_loyer: 'contrat de location ou quittance de loyer datant de plus de 3 mois'
+        facture: 'facture d’électricité, de gaz, d’eau ou de téléphone datant de plus de 3 mois'
+        avis_impot: 'avis d’impôt sur le revenu ou avis de situation déclarative à l’impôt sur le revenu'
+        avis_taxe: 'avis de taxe foncière ou d’habitation'
+        quittance_facture_personne_herbegeante: 'quittance de loyer ou facture d’électricité, de gaz, d’eau ou de téléphone datant de plus de 3 mois établie au nom de la personne qui vous héberge (si vous êtes hébérgé(e) par une personne physique)'
+        attestation_hebergement_centre: 'attestation d’hébergement établie par un centre d’hébergement et de réinsertion sociale datant de plus de 3 mois'
+        attestation_domiciliation: 'attestation de domiciliation établie par un organisme agréé datant de plus de 3 mois (si vous n’avez pas de domicile)'
+        joindre_documents: 'Joignez enfin les documents relatifs à vos ressources et celles des personnes à votre charge, perçues en France et à l’étranger (imposables ou non) pendant les 12 derniers mois.'
+
+enum:
+    type_demande:
+        !php/const App\Enum\TypeDemandeEnum::PREMIERE: 'Première demande d’affiliation'
+        !php/const App\Enum\TypeDemandeEnum::RENOUVELLEMENT: 'Demande de renouvellement'
+    ...:
+        ...: ...
+
+...:
+    ...: ...
+

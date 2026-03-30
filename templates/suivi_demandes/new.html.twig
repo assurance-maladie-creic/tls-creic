@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}suivi_demandes.edit.title{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        {% set can_edit_donnees = is_granted('DEMANDE_EDIT_DONNEES', demande) %}
+        <div class="col-md-12 col-lg-7 mx-auto">
+            <nav
+                id="form-nav"
+                class="navbar navbar-light bg-white px-3 justify-content-center sticky-top"
+                {{ stimulus_controller('offset-jumper') }}
+                {{ stimulus_target('offset-jumper', 'navbar') }}
+            >
+                <ul class="nav nav-pills flex-column flex-md-row mb-2" >
+                    <li class="nav-item">
+                        <a href="#mon-identite" class="nav--link" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            {{ 'form.pre_inscription.mon_identite_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ma-residence" class="nav--link" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            {{ 'form.pre_inscription.ma_residence_label'|trans }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mon-foyer" class="nav--link" {{ stimulus_action('offset-jumper', 'jump') }}>
+                            {{ 'form.pre_inscription.mon_foyer_label'|trans }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active">
+                    <div class="card text-bg-light">
+                        <div class="card-body">
+                            <!--
+                            ...
+                            -->
+
+                            <twig:DemandeForm
+                                :form="form"
+                                data-bs-spy="scroll"
+                                data-bs-offset="20"
+                                data-bs-target="#form-nav"
+                                tabindex="0"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-2">
+                <div class="card-body text-center">
+                    <a
+                        class="btn btn-lg btn-outline-secondary btn--am fs-5"
+                        role="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-confirm"
+                        data-bs-confirm-url="{{ path('suivi_demandes.index') }}"
+                    >
+                        <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                        {% trans %}suivi_demandes.edit.retour{% endtrans %}
+                    </a>
+                    <button
+                        type="submit"
+                        class="btn btn-lg btn-outline--primary-light btn--am  fs-5 ms-4"
+                        form="demande-edit"
+                        name="type-submit-edit"
+                        value="{{ constant('App\\Enum\\TypeSubmitEditEnum::ENREGISTRER') }}"
+                    >
+                        <i class="bi bi-save" aria-hidden="true"></i>
+                        {% trans %}suivi_demandes.edit.enregistrer{% endtrans %}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

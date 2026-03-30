@@ -1,0 +1,10 @@
+<div class="text-end">
+    <button
+        class="btn btn-outline-danger px-4 py-2"
+        {{ stimulus_action('form-collection', 'removeCollectionElement') }}
+        data-form-collection-index-param="{{ index }}"
+        type="button"
+    >
+        {% trans %}form.membre_famille.button_delete_label{% endtrans %}
+    </button>
+</div>

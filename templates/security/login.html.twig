@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}security.login.title{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1 class="text-center display-5 text--primary fw-bold am-font-narrow">
+        {% trans %}home.index.heading{% endtrans %}
+    </h1>
+    {% include 'home/_flags.html.twig'%}
+
+    {% for i in 0..1 %}
+        {# Ajout d'un espace vertical sur les grands écrans #}
+        <div class="mt-md-5 mt-lg-5" style="min-height: 100%"></div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-md-6 col-lg-6 mx-auto">
+
+            <div class="card text-bg-light">
+                <div class="card-body mx-5">
+                    <!--
+                    ...
+                    -->
+
+                    <form method="post">
+                        <!--
+                        ...
+                        -->
+
+
+                        <div class="text-center mb-3">
+                            <button class="btn btn--primary btn-lg btn--am" type="submit">
+                                {% trans %}form.login.me_connecter{% endtrans %}
+                            </button>
+                        </div>
+
+                        <!--
+                        ...
+                        -->
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
