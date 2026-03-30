@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+h2 {
+    font-size: 13px;
+    padding-top: 12px;
+}
+
+.bleu-cpam {
+    color: rgb(54, 95, 145);
+}
+
+.small {
+    font-size: 10px;
+}
+
+.footer {
+    bottom: 0%;
+    position: fixed;
+}
+
+
+.legende {
+    font-style: italic;
+    font-size: 0.5em;
+    line-height: 1;
+}

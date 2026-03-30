@@ -1,0 +1,19 @@
+# config/packages/sherlockode_configuration.yaml
+sherlockode_configuration:
+    entity_class:
+        parameter: App\Entity\Parametre
+    parameters:
+        ...:
+            ...: ...
+        minima_sociaux_annuels:
+            label: Minima sociaux annuels (en centimes)
+            type: simple
+            options:
+                required: true
+                divisor: 100
+                subtype: 'XXX\XXX\XXX\XXX\XXX\XXX\IntegerType'
+                constraints:
+                    -   NotBlank: ~
+                    -   PositiveOrZero: ~
+        ...:
+            ...: ...
